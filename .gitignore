@@ -1,0 +1,14 @@
+# The Slang checkout and everything CMake produces from it. The tracked
+# libraries are copied out of here by the build scripts.
+/src/
+/build/
+
+# Jai's intermediate output.
+.build/
+
+# `jai-linux test/build.jai` puts the test executables in test/ and copies
+# Slang's runtime libraries next to them, the way any program using this module
+# has to. /*.pdb is MSVC's debug symbols for the .exe, from Jai's default
+# /DEBUG link on Windows.
+/test/bin/
+/test/android/
